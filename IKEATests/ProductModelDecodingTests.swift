@@ -23,7 +23,7 @@ class ProductModelDecodingTests: XCTestCase {
         jsonDecoder = nil
     }
     
-    // MARK: Tests
+    // MARK: - Tests
     
     func testProductsCount() throws {
         let decodedProducts = try jsonDecoder.decode([Product].self, from: jsonData)

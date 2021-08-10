@@ -52,7 +52,9 @@ class TabBarController: UITabBarController {
     
     private func makeCartNavigationController() -> UINavigationController {
         let cartRepository = viewModel.appRepository.cartRepository
-        let cartViewController = CartViewController()
+        let cartViewModel = CartViewModel(cartRepository: cartRepository)
+        
+        let cartViewController = CartViewController(viewModel: cartViewModel)
         let tabBarItem = cartViewController.tabBarItem
         
         let cartItemViewModel = viewModel.cartItem

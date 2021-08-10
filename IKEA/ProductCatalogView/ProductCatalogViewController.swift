@@ -75,7 +75,6 @@ class ProductCatalogViewController: UIViewController {
     
     private func loadProducts() {
         let products = viewModel.fetchProducts()
-            .map { ProductItemViewModel(product: $0) }
 
         dataSourceSnapshot.deleteAllItems()
         dataSourceSnapshot.appendSections([.main])

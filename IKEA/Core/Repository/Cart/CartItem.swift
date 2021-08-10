@@ -11,6 +11,10 @@ class CartItem {
     let product: Product
     private(set) var amount: Int
     
+    var totalPrice: Decimal {
+        product.price.value * Decimal(amount)
+    }
+    
     init(product: Product, amount: Int = 1) {
         self.product = product
         self.amount = amount

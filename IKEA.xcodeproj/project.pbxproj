@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B110C80126C31527006DA831 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110C80026C31527006DA831 /* CartViewModel.swift */; };
+		B110C80926C31D65006DA831 /* CartItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110C80826C31D65006DA831 /* CartItemViewModel.swift */; };
+		B110C81126C32420006DA831 /* UIImage+scalePreservingAspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110C81026C32420006DA831 /* UIImage+scalePreservingAspectRatio.swift */; };
 		B12C048126C1CDE30050FB0C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C048026C1CDE30050FB0C /* TabBarViewModel.swift */; };
 		B12C048926C1CF2C0050FB0C /* TabBarItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C048826C1CF2C0050FB0C /* TabBarItemViewModel.swift */; };
 		B1333C5C26C2E69200DA0A63 /* ProductCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1333C5B26C2E69200DA0A63 /* ProductCatalogViewModel.swift */; };
@@ -56,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B110C80026C31527006DA831 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		B110C80826C31D65006DA831 /* CartItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemViewModel.swift; sourceTree = "<group>"; };
+		B110C81026C32420006DA831 /* UIImage+scalePreservingAspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+scalePreservingAspectRatio.swift"; sourceTree = "<group>"; };
 		B12C048026C1CDE30050FB0C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		B12C048826C1CF2C0050FB0C /* TabBarItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemViewModel.swift; sourceTree = "<group>"; };
 		B1333C5B26C2E69200DA0A63 /* ProductCatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCatalogViewModel.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 				B19893FE26C1EC0500861A0E /* CurrencyFormatter.swift */,
 				B198940326C1EC4B00861A0E /* UIImage+load.swift */,
 				B1333C8726C3035900DA0A63 /* ProductTextFormatter.swift */,
+				B110C81026C32420006DA831 /* UIImage+scalePreservingAspectRatio.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -182,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B198940826C1F1CE00861A0E /* ProductCatalogCollectionViewCell.swift */,
+				B1333C7326C2F74900DA0A63 /* ProductItemViewModel.swift */,
 				B198940926C1F1CE00861A0E /* ProductCatalogCollectionViewCell.xib */,
 			);
 			path = ProductCatalogCollectionViewCell;
@@ -248,7 +256,6 @@
 				B19A272526C1C51400E4A1EB /* ProductCatalogViewController.swift */,
 				B19A272626C1C51400E4A1EB /* ProductCatalogViewController.xib */,
 				B1333C5B26C2E69200DA0A63 /* ProductCatalogViewModel.swift */,
-				B1333C7326C2F74900DA0A63 /* ProductItemViewModel.swift */,
 				B198940F26C1F1D300861A0E /* ProductCatalogCollectionViewCell */,
 			);
 			path = ProductCatalogView;
@@ -259,6 +266,8 @@
 			children = (
 				B19A273326C1C5F000E4A1EB /* CartViewController.swift */,
 				B19A273426C1C5F000E4A1EB /* CartViewController.xib */,
+				B110C80026C31527006DA831 /* CartViewModel.swift */,
+				B110C80826C31D65006DA831 /* CartItemViewModel.swift */,
 			);
 			path = CartView;
 			sourceTree = "<group>";
@@ -399,13 +408,16 @@
 				B12C048926C1CF2C0050FB0C /* TabBarItemViewModel.swift in Sources */,
 				B1333C8026C2FFE500DA0A63 /* CartRepository.swift in Sources */,
 				B19893FF26C1EC0500861A0E /* CurrencyFormatter.swift in Sources */,
+				B110C81126C32420006DA831 /* UIImage+scalePreservingAspectRatio.swift in Sources */,
 				B1333C8826C3035900DA0A63 /* ProductTextFormatter.swift in Sources */,
 				B19893D526C1D48400861A0E /* Product.swift in Sources */,
 				B19A272726C1C51400E4A1EB /* ProductCatalogViewController.swift in Sources */,
 				B1333C5C26C2E69200DA0A63 /* ProductCatalogViewModel.swift in Sources */,
 				B19893DA26C1D93900861A0E /* ProductInfo.swift in Sources */,
+				B110C80926C31D65006DA831 /* CartItemViewModel.swift in Sources */,
 				B19A272126C1C3AF00E4A1EB /* TabBarController.swift in Sources */,
 				B1333C6426C2E6CA00DA0A63 /* ProductsRepository.swift in Sources */,
+				B110C80126C31527006DA831 /* CartViewModel.swift in Sources */,
 				B19893DF26C1D97100861A0E /* ProductType.swift in Sources */,
 				B19A273526C1C5F000E4A1EB /* CartViewController.swift in Sources */,
 				B1333C6C26C2F03B00DA0A63 /* AppRepository.swift in Sources */,

@@ -11,7 +11,7 @@ class ProductCatalogViewModel {
     private let productRepository: ProductsRepository
     private let cartRepository: CartRepository
     
-    private(set) var cachedProducts = [Product]()
+    private var cachedProducts = [Product]()
     let title = "Product Catalog"
     
     init(
@@ -22,9 +22,11 @@ class ProductCatalogViewModel {
         self.cartRepository = cartRepository
     }
     
-    func fetchProducts() -> [Product] {
+    func fetchProducts() -> [ProductItemViewModel] {
         cachedProducts = productRepository.fetchProducts()
+        
         return cachedProducts
+            .map { ProductItemViewModel(product: $0) }
     }
     
     func addProductToCart(id: String) {
