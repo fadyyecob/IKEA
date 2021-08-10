@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCatalogCollectionViewCell" customModule="IKEA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="243" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="243" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yO5-Bi-CkK">
+                        <rect key="frame" x="0.0" y="0.0" width="261" height="164"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0M-Aj-sHn">
+                                <rect key="frame" x="0.0" y="0.0" width="211" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZ9-AC-tQP">
+                                <rect key="frame" x="0.0" y="50" width="211" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-8W-Kwv">
+                                <rect key="frame" x="0.0" y="89.5" width="211" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myF-lK-5BV">
+                                <rect key="frame" x="0.0" y="110" width="211" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjN-mO-PyR">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqE-9B-qgP">
+                                        <rect key="frame" x="39" y="0.0" width="172" height="22"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="cart.fill.badge.plus" catalog="system" symbolScale="medium"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addToBasket" destination="gTV-IL-0wX" eventType="touchUpInside" id="WkW-fA-phX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yO5-Bi-CkK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="9X0-Qg-3ik"/>
+                <constraint firstAttribute="trailing" secondItem="yO5-Bi-CkK" secondAttribute="trailing" constant="16" id="ATe-Ix-Cld"/>
+                <constraint firstAttribute="bottom" secondItem="yO5-Bi-CkK" secondAttribute="bottom" constant="16" id="bRC-DO-BSz"/>
+                <constraint firstItem="yO5-Bi-CkK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="siH-zE-wqJ"/>
+            </constraints>
+            <size key="customSize" width="243" height="164"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="dVD-8W-Kwv" id="gT0-vA-k0M"/>
+                <outlet property="imageView" destination="Z0M-Aj-sHn" id="eCa-ZY-gts"/>
+                <outlet property="nameLabel" destination="IZ9-AC-tQP" id="NhM-co-pPU"/>
+                <outlet property="priceLabel" destination="BjN-mO-PyR" id="YGG-DN-UPa"/>
+            </connections>
+            <point key="canvasLocation" x="432.60869565217394" y="87.053571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+    </resources>
+</document>
